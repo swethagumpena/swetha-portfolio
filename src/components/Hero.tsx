@@ -17,7 +17,7 @@ const Hero = () => {
           alt={""}
         />
       </div>
-      <div className="py-16 lg:py-48 flex flex-col lg:flex-row justify-around gap-10 lg:gap-0">
+      <div className="py-20 lg:py-56 flex flex-col lg:flex-row justify-around gap-10 lg:gap-0">
         <div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/2 mx-4 md:mx-6 xl:mx-0">
           <div className="flex items-center gap-1">
             <Image
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
 
         <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0">
-          <div className="w-56 h-56 md:w-80 md:h-80 lg:-translate-x-16 relative">
+          <div className="w-66 h-66 md:w-80 md:h-80 lg:-translate-x-16 relative">
             <div className="absolute w-full h-full bg-blue-200 rounded-full"></div>
             <Image
               alt="avatar"
