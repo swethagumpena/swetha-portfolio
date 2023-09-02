@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-[90vh] pt-12 bg-gradient-to-b from-white to-gray-300/20 dark:from-grey-900 dark:to-grey-900"
+      className="min-h-[90vh] pt-12 bg-gray-50 dark:from-grey-900 dark:to-grey-900"
     >
       <h2 className="text-4xl text-center">About Me</h2>
       <div className="w-full lg:w-11/12 2xl:w-4/5 mt-2 mx-auto flex flex-col md:gap-4 lg:flex-row justify-between items-center">

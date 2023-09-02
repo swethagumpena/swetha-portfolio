@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Header from "./Header";
 import About from "@/components/About";
+import Skills from "@/components/skills/Skills";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <About />
+      <Skills />
     </>
   );
 };
