@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-[90vh] pt-12 bg-gray-50 dark:from-grey-900 dark:to-grey-900"
+      className="min-h-[90vh] pt-12 bg-gray-100 opacity-80 dark:from-grey-900 dark:to-grey-900"
     >
       <h2 className="text-4xl text-center">About Me</h2>
       <div className="w-full lg:w-11/12 2xl:w-4/5 mt-2 mx-auto flex flex-col md:gap-4 lg:flex-row justify-between items-center">
@@ -24,7 +24,7 @@ const About = () => {
         <div className="flex-1 text-left mx-3 mt-4 md:mt-0 md:mx-0 md:p-6">
           <div className="flex flex-col gap-2.5">
             <p className="text-3xl font-semibold">Swetha Gumpena</p>
-            <p className="text-blue-900 w-fit rounded py-1 px-2 text-sm dark:text-blue-600 bg-blue-50 dark:bg-violet-900/10">
+            <p className="text-blue-900 w-fit rounded py-1 px-2 text-sm dark:text-blue-600 bg-blue-100 dark:bg-violet-900/10">
               Developer
             </p>
             <p className="text-sm md:text-base my-2 text-gray-600 dark:text-gray-300">
@@ -40,7 +40,7 @@ const About = () => {
                   "https://drive.google.com/file/d/1-9-Qv1quR31lwTwYlOr49eEYMQp-cQLN/view?usp=drive_link"
                 }
                 target="_blank"
-                className="text-sm md:text-base bg-blue-800 dark:bg-blue-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl transition-shadow"
+                className="text-sm md:text-base bg-blue-600 dark:bg-blue-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl transition-shadow"
               >
                 Resume
               </Link>
