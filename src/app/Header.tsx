@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
-  const navOptions = ["home", "about", "projects", "experience", "contact"];
+  const navOptions = ["home", "about", "skills", "projects", "experience"];
 
   useEffect(() => {
     const updateScroll = () => {
@@ -27,9 +27,9 @@ const Header = () => {
           className="2xl:ml-6 hover:text-blue-900 hover:dark:text-blue-600 transition-colors duration-300"
         >
           <Image
-            src="/sg-logo-black.png"
-            width={40}
-            height={40}
+            src="/sg-logo.png"
+            width={100}
+            height={60}
             quality={100}
             alt={""}
           />
@@ -40,7 +40,7 @@ const Header = () => {
               <ScrollLink
                 className="hover:text-blue-900 hover:dark:text-blue-600 transition-colors capitalize cursor-pointer"
                 to={option}
-                offset={-60}
+                offset={-80}
                 smooth={true}
                 duration={500}
                 isDynamic={true}

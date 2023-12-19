@@ -28,7 +28,7 @@ const About = () => {
               Developer
             </p>
             <p className="text-sm md:text-base my-2 text-gray-600 dark:text-gray-300">
-              I am a developer based in Chicago, USA. I am currently pursuing my
+              I am a developer based in the USA. I am currently pursuing my
               Masters in Computer Science from the University of Illinois,
               Chicago. I am passionate about building highly functional and
               robust applications from a user-centered approach, and I am

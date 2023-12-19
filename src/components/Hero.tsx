@@ -1,11 +1,15 @@
 "use client";
 import Image from "next/image";
 import wavingHand from "../../public/waving-hand.gif";
+import SectionWrapper from "../components/SectionWrapper";
 import TypewriterComponent from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <>
+    <SectionWrapper
+      id="home"
+      className="mx-4 md:mx-0 min-h-screen bg-gray-100 opacity-80 dark:from-grey-900 dark:to-grey-900"
+    >
       <div className="absolute -z-10 min-h-screen h-full w-full">
         <Image
           src="/herobg.jpg"
@@ -74,7 +78,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </SectionWrapper>
   );
 };
 

@@ -10,7 +10,7 @@ const Experiences = () => {
   const employment = [
     {
       company: "University of Illinois Chicago",
-      logo: "/assets/uic.jpeg",
+      logo: "/assets/experience/uic.jpeg",
       position: "Graduate Software Developer",
       duration: "Feb 2023 - Present",
       location: "Chicago, IL, USA",
@@ -18,7 +18,7 @@ const Experiences = () => {
     },
     {
       company: "McKinsey & Company",
-      logo: "/assets/mck.jpeg",
+      logo: "/assets/experience/mck.jpeg",
       position: "Front-end Engineering Intern",
       duration: "May 2023 - July 2023",
       location: "Chicago, IL, USA",
@@ -26,7 +26,7 @@ const Experiences = () => {
     },
     {
       company: "McKinsey & Company",
-      logo: "/assets/mck.jpeg",
+      logo: "/assets/experience/mck.jpeg",
       position: "Full-stack Engineer",
       duration: "Aug 2021 - July 2022",
       location: "Bangalore, KA, India",
@@ -36,7 +36,7 @@ const Experiences = () => {
     },
     {
       company: "McKinsey & Company",
-      logo: "/assets/mck.jpeg",
+      logo: "/assets/experience/mck.jpeg",
       position: "Full-stack Engineering Intern",
       duration: "Feb 2021 - July 2021",
       location: "Bangalore, KA, India",
@@ -44,7 +44,7 @@ const Experiences = () => {
     },
     {
       company: "Samsung Research Institute",
-      logo: "/assets/samsung.jpeg",
+      logo: "/assets/experience/samsung.jpeg",
       position: "Deep Learning Intern",
       duration: "Jan 2020 - Aug 2020",
       location: "Bangalore, KA, India",
@@ -54,7 +54,7 @@ const Experiences = () => {
   const education = [
     {
       institute: "University of Illinois Chicago",
-      logo: "/assets/uic.jpeg",
+      logo: "/assets/experience/uic.jpeg",
       location: "Chicago, IL, USA",
       degree: "MSc Computer Science",
       duration: "2022 - 2024",
@@ -65,7 +65,7 @@ const Experiences = () => {
     },
     {
       institute: "BMS College of Engineering",
-      logo: "/assets/bmsce.jpeg",
+      logo: "/assets/experience/bmsce.jpeg",
       location: "Bangalore, KA, India",
       degree: "B.E. Electronics & Communication",
       duration: "2017 - 2021",
@@ -83,19 +83,19 @@ const Experiences = () => {
     >
       <h2 className="text-4xl text-center">Experience</h2>
 
-      <div className="w-fit mx-auto mt-6 p-2 bg-white dark:bg-grey-800 rounded-md flex gap-2 items-center">
+      <div className="overflow-x-auto scroll-hide md:w-1/4 max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-gray-100 opacity-80 dark:from-grey-900 dark:to-grey-900 p-2 rounded-md">
         {["Employment", "Education"].map((e, i) => (
-          <button
+          <span
             key={i}
             onClick={() => setShow(e)}
-            className={`py-2 px-4 rounded-md transition-colors ${
+            className={`p-1.5 md:p-2 w-full text-sm md:text-base text-center capitalize rounded-md ${
               show === e
-                ? "bg-blue-600 text-white"
-                : "hover:bg-gray-100 hover:dark:bg-grey-900 text-black dark:text-white"
-            }`}
+                ? "bg-blue-600 dark:bg-blue-600 text-white"
+                : "bg-white dark:bg-gray-800 hover:bg-gray-100 hover:dark:bg-gray-900"
+            } cursor-pointer transition-all`}
           >
             {e}
-          </button>
+          </span>
         ))}
       </div>
 

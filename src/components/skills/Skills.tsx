@@ -4,66 +4,158 @@ import SkillCard from "./SkillCard";
 import { skill } from "../../../types/main";
 
 const Skills = () => {
-  const categories = ["Frontend", "Backend", "Others"];
+  const categories = ["Languages", "Web & Mobile", "Cloud & Data", "Others"];
   const [category, setCategory] = useState(categories[0]);
   const skillData = [
-    { category: "Frontend", name: "Javascript", image: "/assets/js.jpeg" },
-    { category: "Frontend", name: "ReactJs", image: "/assets/react.jpg" },
-    { category: "Frontend", name: "Redux", image: "/assets/redux.png" },
     {
-      category: "Frontend",
+      category: "Languages",
+      name: "Javascript",
+      image: "/assets/skills/js.jpeg",
+    },
+    {
+      category: "Languages",
+      name: "Python",
+      image: "/assets/skills/python.png",
+    },
+    { category: "Languages", name: "C#", image: "/assets/skills/csharp.png" },
+    { category: "Languages", name: "Scala", image: "/assets/skills/scala.png" },
+    { category: "Languages", name: "Java", image: "/assets/skills/java.png" },
+    { category: "Languages", name: "C++", image: "/assets/skills/cpp.png" },
+    { category: "Languages", name: "SQL", image: "/assets/skills/sql.jpg" },
+    {
+      category: "Web & Mobile",
+      name: "HTML5",
+      image: "/assets/skills/html.png",
+    },
+    { category: "Web & Mobile", name: "CSS3", image: "/assets/skills/css.png" },
+    {
+      category: "Web & Mobile",
       name: "Typescript",
-      image: "/assets/typescript.jpg",
+      image: "/assets/skills/typescript.jpg",
     },
     {
-      category: "Frontend",
-      name: "TailwindCSS",
-      image: "/assets/tailwind.png",
+      category: "Web & Mobile",
+      name: "ReactJs",
+      image: "/assets/skills/react.jpg",
     },
     {
-      category: "Frontend",
-      name: "MaterialUI",
-      image: "/assets/material-ui.png",
-    },
-    { category: "Frontend", name: "HTML5", image: "/assets/html.png" },
-    { category: "Frontend", name: "CSS3", image: "/assets/css.png" },
-    {
-      category: "Frontend",
+      category: "Web & Mobile",
       name: "React Native",
-      image: "/assets/react-native.png",
+      image: "/assets/skills/react-native.png",
     },
-    { category: "Frontend", name: "Flutter", image: "/assets/flutter.png" },
-    { category: "Frontend", name: "Bootstrap", image: "/assets/bootstrap.jpg" },
-    { category: "Frontend", name: "Sass", image: "/assets/sass.png" },
-    { category: "Frontend", name: "NextJS", image: "/assets/nextjs.png" },
-    { category: "Backend", name: "NodeJs", image: "/assets/nodejs.png" },
-    { category: "Backend", name: "ExpressJs", image: "/assets/expressjs.png" },
     {
-      category: "Backend",
-      name: "PostgreSQL",
-      image: "/assets/postgresql.png",
+      category: "Web & Mobile",
+      name: "VueJS",
+      image: "/assets/skills/vue.jpg",
     },
-    { category: "Backend", name: "MySQL", image: "/assets/mysql.png" },
-    { category: "Others", name: "Python", image: "/assets/python.png" },
-    { category: "Others", name: "Googling", image: "/assets/googling.png" },
+    {
+      category: "Web & Mobile",
+      name: "Flutter",
+      image: "/assets/skills/flutter.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "NodeJs",
+      image: "/assets/skills/nodejs.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "ExpressJs",
+      image: "/assets/skills/expressjs.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "Redux",
+      image: "/assets/skills/redux.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "TailwindCSS",
+      image: "/assets/skills/tailwind.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "MaterialUI",
+      image: "/assets/skills/material-ui.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "Bootstrap",
+      image: "/assets/skills/bootstrap.jpg",
+    },
+    {
+      category: "Web & Mobile",
+      name: "Sass",
+      image: "/assets/skills/sass.png",
+    },
+    {
+      category: "Web & Mobile",
+      name: "NextJS",
+      image: "/assets/skills/nextjs.png",
+    },
+
+    { category: "Cloud & Data", name: "AWS", image: "/assets/skills/aws.png" },
+    {
+      category: "Cloud & Data",
+      name: "Hadoop",
+      image: "/assets/skills/hadoop.jpg",
+    },
+    {
+      category: "Cloud & Data",
+      name: "Spark",
+      image: "/assets/skills/spark.png",
+    },
+    {
+      category: "Cloud & Data",
+      name: "PostgreSQL",
+      image: "/assets/skills/postgresql.png",
+    },
+    {
+      category: "Cloud & Data",
+      name: "MySQL",
+      image: "/assets/skills/mysql.png",
+    },
+
+    {
+      category: "Others",
+      name: "Tableau",
+      image: "/assets/skills/tableau.png",
+    },
+    {
+      category: "Others",
+      name: "Googling",
+      image: "/assets/skills/googling.png",
+    },
     {
       category: "Others",
       name: "Prompt Engineering",
-      image: "/assets/prompt.png",
+      image: "/assets/skills/prompt.png",
     },
     {
       category: "Others",
       name: "Android Studio",
-      image: "/assets/android-studio.png",
+      image: "/assets/skills/android-studio.png",
     },
-    { category: "Others", name: "Git", image: "/assets/git.png" },
-    { category: "Others", name: "GitHub", image: "/assets/github.png" },
-    { category: "Others", name: "Firebase", image: "/assets/firebase.png" },
-    { category: "Others", name: "Swagger", image: "/assets/swagger.png" },
-    { category: "Others", name: "Postman", image: "/assets/postman.png" },
-    { category: "Others", name: "Jira", image: "/assets/jira.png" },
-    { category: "Others", name: "Canva", image: "/assets/canva.png" },
-    { category: "Others", name: "Figma", image: "/assets/figma.png" },
+    { category: "Others", name: "Git", image: "/assets/skills/git.png" },
+    { category: "Others", name: "GitHub", image: "/assets/skills/github.png" },
+    {
+      category: "Others",
+      name: "Firebase",
+      image: "/assets/skills/firebase.png",
+    },
+    {
+      category: "Others",
+      name: "Postman",
+      image: "/assets/skills/postman.png",
+    },
+    {
+      category: "Others",
+      name: "Swagger",
+      image: "/assets/skills/swagger.png",
+    },
+    { category: "Others", name: "Jira", image: "/assets/skills/jira.png" },
+    { category: "Others", name: "Canva", image: "/assets/skills/canva.png" },
+    { category: "Others", name: "Figma", image: "/assets/skills/figma.png" },
   ];
 
   return (
