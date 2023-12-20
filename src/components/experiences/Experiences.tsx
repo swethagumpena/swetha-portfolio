@@ -83,7 +83,7 @@ const Experiences = () => {
     >
       <h2 className="text-4xl text-center">Experience</h2>
 
-      <div className="overflow-x-auto scroll-hide md:w-1/4 max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-gray-100 opacity-80 dark:from-grey-900 dark:to-grey-900 p-2 rounded-md">
+      <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/4 mx-auto mt-6 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md">
         {["Employment", "Education"].map((e, i) => (
           <span
             key={i}
