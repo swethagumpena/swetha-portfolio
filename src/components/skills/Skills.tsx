@@ -4,24 +4,9 @@ import SkillCard from "./SkillCard";
 import { skill } from "../../../types/main";
 
 const Skills = () => {
-  const categories = ["Languages", "Web & Mobile", "Cloud & Data", "Others"];
+  const categories = ["Web & Mobile", "Cloud & Data", "Languages", "Others"];
   const [category, setCategory] = useState(categories[0]);
   const skillData = [
-    {
-      category: "Languages",
-      name: "Javascript",
-      image: "/assets/skills/js.jpeg",
-    },
-    {
-      category: "Languages",
-      name: "Python",
-      image: "/assets/skills/python.png",
-    },
-    { category: "Languages", name: "C#", image: "/assets/skills/csharp.png" },
-    { category: "Languages", name: "Scala", image: "/assets/skills/scala.png" },
-    { category: "Languages", name: "Java", image: "/assets/skills/java.png" },
-    { category: "Languages", name: "C++", image: "/assets/skills/cpp.png" },
-    { category: "Languages", name: "SQL", image: "/assets/skills/sql.jpg" },
     {
       category: "Web & Mobile",
       name: "HTML5",
@@ -115,7 +100,21 @@ const Skills = () => {
       name: "MySQL",
       image: "/assets/skills/mysql.png",
     },
-
+    {
+      category: "Languages",
+      name: "Javascript",
+      image: "/assets/skills/js.jpeg",
+    },
+    {
+      category: "Languages",
+      name: "Python",
+      image: "/assets/skills/python.png",
+    },
+    { category: "Languages", name: "C#", image: "/assets/skills/csharp.png" },
+    { category: "Languages", name: "Scala", image: "/assets/skills/scala.png" },
+    { category: "Languages", name: "Java", image: "/assets/skills/java.png" },
+    { category: "Languages", name: "C++", image: "/assets/skills/cpp.png" },
+    { category: "Languages", name: "SQL", image: "/assets/skills/sql.jpg" },
     {
       category: "Others",
       name: "Tableau",
