@@ -171,10 +171,7 @@ const Projects = () => {
   );
   const [viewAll, setViewAll] = useState(false);
 
-  console.log(filteredProjects);
-
   const filterProjects = (cat: string) => {
-    console.log(cat);
     setViewAll(false);
     setCategory(cat);
     setFilteredProjects(
